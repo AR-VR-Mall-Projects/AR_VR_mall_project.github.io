@@ -99,6 +99,7 @@ function run () {
 
         const i = (y * map.width ) + x;
         const position = `${((x - (map.width / 2)) * WALL_SIZE)} 1.5 ${(y - (map.height / 2)) * WALL_SIZE}`;
+        // const position = `10 5 1`;
 
         // if the number is 1 - 4, create a wall
         if (map.data[i] === 1 || map.data[i] == 2 || map.data[i] === 3 || map.data[i] === 4) {
