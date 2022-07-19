@@ -133,11 +133,11 @@
       position="-3.62 4.29 18.91"></a-entity> -->
 
     <!-- pathway lights-->
-    <!-- <a-entity light="type:spot;intensity:1.5;distance:7.5;decay:0.5;color:#ffffff;angle:180;castShadow:true"
-      position="-1.8 6 9.38"></a-entity>
+    <a-entity light="type:spot;intensity:1;distance:10;decay:0.5;color:#ffffff;angle:180;castShadow:true"
+      position="-20 6 -21"></a-entity>
 
-    <a-entity light="type:point;intensity:1.75;distance:8.5;decay:0.5;color:#ffffff;angle:180;castShadow:true"
-      position="-1.72 6.08 -1"></a-entity> -->
+    <!-- <a-entity light="type:point;intensity:1;distance:10;decay:0.5;color:#ffffff;angle:180;castShadow:true"
+      position="-20 6 -25"></a-entity> -->
 
     <!-- sports light-->
     <!-- <a-entity id="sports-light"
@@ -271,7 +271,8 @@
 
     <!-- movement controls-->
     <a-entity id="rig" movement-controls position-listener listener position="0 0 0">
-      <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3 5 70">
+      <!-- Do position="-3 6 70" -->
+      <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3 10 0">
         <a-entity cursor="fuse: true;" position="0 0 -3" geometry="primitive: ring"
           material="color: black; shader: flat">
           <a-animation begin="click" easing="ease-in" attribute="scale" dur="150" fill="forwards" from="0.1 0.1 0.1"
@@ -283,15 +284,48 @@
     </a-entity>
     </a-entity>
 
+    <!-- Wall pictures -->
+
+    <!-- hallway starts -->
+    <!--left wall -->
+    <a-entity position="-31 8.5 31" rotation="0 90 0">
+      <a-image position="0 0 0" src="#team-poster" height="10" width="10"></a-image>
+      <a-image position="-19 0 0" src="#team-poster" height="10" width="10"></a-image>
+      <a-image position="23 0 0" src="#team-poster" height="10" width="10"></a-image>
+      <a-image position="45 0 0" src="#team-poster" height="10" width="10"></a-image>
+    </a-entity>
+
+    <!-- right wall -->
+    <a-entity position="25 8.5 31" rotation="0 -90 0">
+      <a-image position="0 0 0" src="#team-poster" height="10" width="10"></a-image>
+      <a-image position="19 0 0" src="#team-poster" height="10" width="10"></a-image>
+      <a-image position="-23 0 0" src="#team-poster" height="10" width="10"></a-image>
+      <a-image position="-45 0 0" src="#team-poster" height="10" width="10"></a-image>
+    </a-entity>
+
+    <!-- front wall -->
+    <a-entity position="0 8.5 -31" rotation="0 0 0">
+      <a-image position="-14 0 0" rotation="0 0 0" src="#team-poster" height="10" width="10"></a-image>
+      <a-image position="8 0 0" rotation="0 0 0" src="#team-poster" height="10" width="10"></a-image>
+    </a-entity>
+
+        <!-- back/entry wall -->
+        <a-entity position="0 8.5 55" rotation="0 -180 0">
+          <a-image position="-8 0 0" rotation="0 0 0" src="#team-poster" height="10" width="10"></a-image>
+          <a-image position="14 0 0" rotation="0 0 0" src="#team-poster" height="10" width="10"></a-image>
+        </a-entity>
+
+    <!-- hallway ends -->
+
     <!-- Ground -->
     <a-grid id="ground" static-body material="src: #floor; repeat: 10 10" scale="2 2 2" rotation="-90 0 0"></a-grid>
-
+    <a-grid id="roof" static-body material="src: #floor; repeat: 10 10" position="0 30 0" scale="2 2 2" rotation="90 0 0"></a-grid>
+   
     <!-- Walls (used by map.js -->)
     <a-entity id="walls"></a-entity>
 
-
     <!-- Sky -->
-    <a-sky id="sky" color="#fff"></a-sky>
+    <!-- <a-sky id="sky" color="#fff"></a-sky> -->
 
   </a-scene>
 
