@@ -103,8 +103,9 @@ function run () {
 
       
           else { // normal walls
-            wall.setAttribute('color', '#fff');
+            wall.setAttribute('color', '#77cbec');
             wall.setAttribute('material', 'src: #wall; repeat: 4 4');
+            // wall.setAttribute('material', 'shader:phong; reflectivity: 0.9; shininess: 30;');
             wall.setAttribute('static-body', '');
           }
         }

@@ -1,0 +1,11 @@
+Model Information:
+* title:	doctor model rigged (not mine)
+* source:	https://sketchfab.com/3d-models/doctor-model-rigged-not-mine-c29aebb3619a47dba9c0b92d38c1437a
+* author:	mrminiofficialyt (https://sketchfab.com/mrminiofficialyt)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "doctor model rigged (not mine)" (https://sketchfab.com/3d-models/doctor-model-rigged-not-mine-c29aebb3619a47dba9c0b92d38c1437a) by mrminiofficialyt (https://sketchfab.com/mrminiofficialyt) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
