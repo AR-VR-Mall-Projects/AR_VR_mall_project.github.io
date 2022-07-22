@@ -1,4 +1,3 @@
-self.addEventListener('fetch', function(event) {});
 
 /*
  *
@@ -113,4 +112,3 @@ function setupSocketServer() {
     });
   });
 }
-
