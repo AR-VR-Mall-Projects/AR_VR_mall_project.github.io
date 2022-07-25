@@ -91,7 +91,7 @@
         init: function () {
           var stringToLog = this.data;
           console.log(stringToLog);
-          myVr.audioElement = document.getElementById("song");
+          // myVr.audioElement = document.getElementById("song");
         }
       });
 
@@ -308,11 +308,11 @@
     </a-assets>
     <a-assets>
       <!-- audio songs-->
-      <audio id="song" src=""></audio>
+      <!-- <audio id="song" src=""></audio> -->
+      <!-- video -->
+      <video id="women_ads" autoplay loop="true" src="vid/MallCloths3.mp4"></video>
     </a-assets>
-
-
-
+  
 
     <!-- movement controls-->
     <a-entity id="rig" movement-controls position-listener listener position="0 0 0">
@@ -386,6 +386,11 @@
           <a-image position="0 0 0" src="#grocery-img-5" height="15" width="18"></a-image>
           <a-animation attribute="position" repeat="indefinite" to="-35 40 30" dur="2000"></a-animation>
         </a-entity>
+
+        <!-- theatre -->
+        <a-entity position="-1.5 1.5 -22.5">
+            <a-video src="#women_ads" width="16" height="9" position="0 4 -20"></a-video>
+      </a-entity>
 
     <!-- hallway ends -->
 
