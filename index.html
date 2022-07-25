@@ -212,6 +212,11 @@
 
       <!-- wallpapers -->
       <img id="try_wall" src="img/wall_images/nature.jpg" alt="img">
+      <img id="grocery-img-1" src="img/wall_images/grocery/nrd-D6Tu_L3chLE-unsplash.jpg" alt="img">
+      <img id="grocery-img-2" src="img/wall_images/grocery/Flipkart-Grocery-Offers-Sale.jpg" alt="img">
+      <img id="grocery-img-3" src="img\wall_images\grocery\franki-chamaki-wkvKZR4e2OI-unsplash.jpg" alt="img">
+      <img id="grocery-img-4" src="img\wall_images\grocery\alexandra-nosova-lpv--JSLa58-unsplash.jpg" alt="img">
+      <img id="grocery-img-5" src="img\wall_images\grocery\sale.jpg" alt="img">
 
 
       <img id="room-sign-1" src="img/other/room-sign-1.png">
@@ -305,7 +310,7 @@
     <!-- movement controls-->
     <a-entity id="rig" movement-controls position-listener listener position="0 0 0">
       <!-- Do position="-3 6 70" -->
-      <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3 10 0">
+      <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3 7 0">
         <a-entity cursor="fuse: true;" position="0 0 -3" geometry="primitive: ring"
           material="color: black; shader: flat">
           <a-animation begin="click" easing="ease-in" attribute="scale" dur="150" fill="forwards" from="0.1 0.1 0.1"
@@ -351,6 +356,28 @@
         <a-entity position="0 8.5 55" rotation="0 -180 0">
           <a-image position="-8 0 0" rotation="0 0 0" src="#team-poster" height="10" width="10"></a-image>
           <a-image position="14 0 0" rotation="0 0 0" src="#team-poster" height="10" width="10"></a-image>
+        </a-entity>
+        <!-- Grocery image 1 -->
+        <a-entity position="-58 0 -5" rotation="0 -90 0">
+          <a-image position="0 0 0" src="#grocery-img-1" height="58" width="58"></a-image>
+        </a-entity>
+        <!-- Grocery image 2 -->
+        <a-entity position="-35 14 14" rotation="0 -90 0">
+          <a-image position="0 0 0" src="#grocery-img-2" height="15" width="17"></a-image>
+        </a-entity>
+        <!-- Grocery image 3 -->
+        <a-entity position="-35 6 -20" rotation="0 -90 0">
+          <a-image position="0 0 0" src="#grocery-img-3" height="12" width="18"></a-image>
+        </a-entity>
+        <!-- Grocery image 4 -->
+        <a-entity position="-35 20 -20" rotation="0 -90 0">
+          <a-image position="0 0 0" src="#grocery-img-4" height="15" width="18"></a-image>
+        </a-entity>
+        <!-- Grocery image 5 -->
+        <a-entity position="-35 40 -25" rotation="0 90 0" >
+                  <!-- animation="property: position; to: -35 40 14; loop: true; dur: 2000"> -->
+          <a-image position="0 0 0" src="#grocery-img-5" height="15" width="18"></a-image>
+          <a-animation attribute="position" repeat="indefinite" to="-35 40 30" dur="2000"></a-animation>
         </a-entity>
 
     <!-- hallway ends -->
