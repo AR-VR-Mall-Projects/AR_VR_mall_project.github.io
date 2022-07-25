@@ -21,9 +21,14 @@
   <meta name="description" content="VR Shopping Experience">
   <!-- VR Vedio chat  -->
   <script src="js/libs/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
 	<script src="js/libs/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.117.1/examples/jsm/loaders/FBXLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 	<script src="js/libs/firstPersonControls.js"></script>
 	<script src="js/libs/simplepeer.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
 
 	<script src="js/environment.js"></script>
 	<script src="js/scene.js"></script>
@@ -305,7 +310,7 @@
     <!-- movement controls-->
     <a-entity id="rig" movement-controls position-listener listener position="0 0 0">
       <!-- Do position="-3 6 70" -->
-      <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3 10 0">
+      <a-entity id="player" camera="user-height: 2" look-controls="pointerLockEnabled: true" position="-3 10 70">
         <a-entity cursor="fuse: true;" position="0 0 -3" geometry="primitive: ring"
           material="color: black; shader: flat">
           <a-animation begin="click" easing="ease-in" attribute="scale" dur="150" fill="forwards" from="0.1 0.1 0.1"
@@ -367,10 +372,16 @@
 
     <!-- models -->
     <a-assets>
-      <a-asset-item id="model" src="scene.gltf"></a-asset-item>
+      <a-asset-item id="man" src="scene.gltf"></a-asset-item>
+      <a-asset-item id="robot1" src="img/robots/robot1/scene.gltf"></a-asset-item>
+      <a-asset-item id="robot3" src="img/robots/robot3/scene.gltf"></a-asset-item>
   </a-assets>
 
-  <a-gltf-model src="#model" scale="2 2 2" ></a-gltf-model>
+  <a-gltf-model src="#man" scale="2 2 2" ></a-gltf-model>
+  <a-gltf-model src="#robot1" scale="5 5 5" position="10 0 60" ></a-gltf-model>
+  <a-gltf-model src="#robot1" scale="5 5 5" position="-15 0 60" ></a-gltf-model>
+  <a-entity gltf-model="#robot3" animation-mixer="clip: Experiment; loop: infinite" scale="5 5 5" position="-4 11 50" ></a-entity>
+  <!-- <a-entity fbx-model="src: url(img/robots/robot4/source);" scale="5 5 5" position="0 0 50" ></a-entity> -->
 
   
 </a-scene>
