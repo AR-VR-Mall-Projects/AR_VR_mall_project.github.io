@@ -107,8 +107,8 @@ const map = {
        
 
   ],
-  "height": 4,
-  "width":4
+  "height": 10,
+  "width":10
 }
 var scene = document.querySelector('a-scene');
 
